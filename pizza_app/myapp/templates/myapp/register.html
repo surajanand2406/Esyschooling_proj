@@ -1,0 +1,36 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<h1>Here you can register!</h1>
+
+<h1>{{error}}</h1>
+<div class="container sign col-md-3">
+	<form method="POST">
+	{% csrf_token %}
+		<div class="one">
+			{{form.username.label}}
+			{{form.username}}
+		</div>
+		
+		<div class="one">
+			{{form.password1.label}}   
+			{{form.password1}}
+		</div>
+		
+		<div class="one">
+			{{form.password2.label}}
+			{{form.password2}}
+		</div>
+		
+		<div class="btn1">
+			<input type="submit" name="Signup">
+		</div>
+		
+		
+	
+	</form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+asgiref==3.2.10
+beautifulsoup4==4.9.3
+certifi==2020.6.20
+Django @ file:///tmp/build/80754af9/django_1601563330930/work
+django-address==0.2.5
+psycopg2 @ file:///C:/ci/psycopg2_1594305172475/work
+pytz==2020.1
+soupsieve==2.0.1
+sqlparse @ file:///tmp/build/80754af9/sqlparse_1602184451250/work
+wincertstore==0.2

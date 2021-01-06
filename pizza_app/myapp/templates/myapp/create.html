@@ -1,0 +1,15 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<h1>Here you can create Your pizza</h1>
+<h1>{{error}}</h1>
+
+	<form method="POST">
+		{% csrf_token %}
+		{{form.as_p}}
+		<button type="submit">save</button>
+	</form>
+
+<h1>Wnat to change?<a href="{% url 'update' %}">Update</a></h1>
+
+{% endblock %}

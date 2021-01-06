@@ -1,0 +1,14 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<h1>Your's created pizza</h1>
+<ul>
+	
+	{% for detail in details %}
+	{{detail.Type}}<br>
+	{{detail.Size}}<br>
+	{{detail.Topping}}
+	{% endfor %}
+	
+</ul>
+{% endblock %}

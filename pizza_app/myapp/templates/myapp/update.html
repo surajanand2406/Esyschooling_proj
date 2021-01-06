@@ -1,0 +1,13 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<h1>Up To Date</h1>
+<form method="POST">
+	{{form.as_p}}
+	<button type="submit">Save</button>
+</form>
+<form method="POST" action="{% url 'delete' myapp.id %}">
+	{{form.as_p}}
+	<button type="submit">Delete</button>
+</form>
+{% endblock %}
